@@ -12,6 +12,7 @@ public partial class _dettaglionews : System.Web.UI.Page
 	public string SottoTitoloHomePage = "";
 	public string TestoHomePage = "";
 	public string ImmagineHomePage = "";
+    public string TitoloPagina = "";
 
 	protected void Page_Load(object sender, EventArgs e)
 	{
@@ -19,7 +20,14 @@ public partial class _dettaglionews : System.Web.UI.Page
 		List<Oggetti.Oggetto> oOggetti = new List<Oggetti.Oggetto>();
         oOggetti = ElencoNotizie;
 
+        notizia1.PreRender += new EventHandler(notizia1_PreRender);
+
 	}
+
+    void notizia1_PreRender(object sender, EventArgs e)
+    {
+        TitoloPagina = notizia1.Notizia.Titolo;
+    }
 
     
     public List<Oggetti.Oggetto> ElencoNotizie

@@ -13,7 +13,7 @@
 
 <asp:Content ID="Content2" runat="server" ContentPlaceHolderID="addheadcontent">
     <link rel="stylesheet" type="text/css" href="/css/news.css" />
-    <title>Associazione Aranceri Mercenari - Notizie</title>
+    <title runat="server"><% = TitoloPagina %> - Associazione Aranceri Mercenari - Notizie</title>
 </asp:Content>
 
 <asp:Content ID="divcontenuto" runat="server" ContentPlaceHolderID="content">

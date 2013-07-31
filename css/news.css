@@ -32,3 +32,8 @@ ul.gallery{margin-top:10px;}
 ul.gallery li{display: block;margin:0 8px;width: 140px;float:left;}
 ul.gallery li a img{border:0;}
 ul.gallery li.first{margin:0 10px 15px 0;}
+
+.leggitutto {text-align:right; margin-top:5px;}
+.leggitutto a{color:#5e121c;}
+
+h1 div.share{position:absolute; right:0; bottom:0;}

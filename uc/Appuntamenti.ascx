@@ -13,6 +13,7 @@
                 <%# Utility.getUrlPhoto(((Oggetti.Oggetto)Container.DataItem).Foto, "w2") %></div>
             <div class="newsappuntamenti">
                 <%# DataBinder.Eval(Container.DataItem, "SottoTitolo")%></div>
+                <div class="leggitutto"><a href="dettaglionews.aspx?id=<%# DataBinder.Eval(Container.DataItem, "ID")%>">Leggi tutto &raquo;</a></div>
         </li>
     </ItemTemplate>
     <AlternatingItemTemplate>
@@ -23,6 +24,7 @@
                 <%# Utility.getUrlPhoto(((Oggetti.Oggetto)Container.DataItem).Foto, "w2")%></div>
             <div class="newsappuntamenti">
                 <%# DataBinder.Eval(Container.DataItem, "SottoTitolo")%></div>
+                <div class="leggitutto"><a href="dettaglionews.aspx?id=<%# DataBinder.Eval(Container.DataItem, "ID")%>">Leggi tutto &raquo;</a></div>
         </li>
     </AlternatingItemTemplate>
     <FooterTemplate>
