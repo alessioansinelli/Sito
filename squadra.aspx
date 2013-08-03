@@ -215,14 +215,17 @@
                 più bello spettacolo del mondo: <b>"Lo Storico Carnevale di Ivrea".</b>
             </p>
             <h2 class="r m10">
-                Grazie a quei 33 e al somaro.</h2>
-            <script language="javascript" type="text/javascript">
-                $(function() { $('.photo').lightBox(); }); 
-            </script>
+                Grazie a quei 33 e al somaro.</h2>            
         </div>
         <div class="grid_4">
             <uc3:Appuntamenti ID="Appuntamenti1" runat="server" />
         </div>
     </div>
 </form>
+</asp:Content>
+
+<asp:Content ID="addScript" runat="server" ContentPlaceHolderID="addScript">
+    <script language="javascript" type="text/javascript">
+        $(function () { $('.photo').lightBox(); }); 
+    </script>
 </asp:Content>

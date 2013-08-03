@@ -13,16 +13,20 @@ public partial class uc_Photogallery : System.Web.UI.UserControl
     public string _SottoTitoloGallery = "";
     public string _TestoGallery = "";
     public string _classname = "";
+    public bool _ShowShare = false;
     private TipoOggetto _TipoOggetto;
     private bool _AllowPagination = false;
     private string _pageurl = "";
+    public string _DataPubblicazione = "";
+    public string _ShowShareUrl = "";
 
     protected void Page_Load(object sender, EventArgs e)
     {
         int iPagina = 1;
         int iCount = int.Parse(System.Configuration.ConfigurationManager.AppSettings["countphoto"].ToString());
-        if (Request["page"] != null) {
-            int.TryParse(Request["Page"].ToString(),out iPagina);
+        if (Request["page"] != null)
+        {
+            int.TryParse(Request["Page"].ToString(), out iPagina);
         }
 
         PagedDataSource oDs = new PagedDataSource();
@@ -39,6 +43,7 @@ public partial class uc_Photogallery : System.Web.UI.UserControl
         _TitoloGallery = oFoto.Titolo;
         _SottoTitoloGallery = oFoto.SottoTitolo;
         _SottoTitoloGallery = oFoto.Testo;
+        _DataPubblicazione = oFoto.DataInserimento.ToString("dd MMM yyyy", new System.Globalization.CultureInfo("it-IT"));
 
 
         //paginazione 
@@ -46,7 +51,7 @@ public partial class uc_Photogallery : System.Web.UI.UserControl
         {
 
             HtmlGenericControl oUl = new HtmlGenericControl("ul");
-           
+
             for (int i = 1; i < oDs.PageCount + 1; i++)
             {
                 string cssclass = "elem";
@@ -67,7 +72,8 @@ public partial class uc_Photogallery : System.Web.UI.UserControl
 
             divPaginazione.Controls.Add(oUl);
         }
-        else {
+        else
+        {
             divPaginazione.Visible = false;
         }
 
@@ -77,9 +83,12 @@ public partial class uc_Photogallery : System.Web.UI.UserControl
     {
         get
         {
-            if (HttpContext.Current.Cache["photogallery" + Request["id"].ToString()] != null){
+            if (HttpContext.Current.Cache["photogallery" + Request["id"].ToString()] != null)
+            {
                 return (Oggetti.Oggetto)HttpContext.Current.Cache["photogallery" + Request["id"].ToString()];
-            }else{
+            }
+            else
+            {
                 Oggetti.Oggetto oNews = new Notizie(_TipoOggetto).Get(int.Parse(Request["id"].ToString()), true, 0);
                 HttpContext.Current.Cache["photogallery" + Request["id"].ToString()] = oNews;
                 return oNews;
@@ -87,7 +96,8 @@ public partial class uc_Photogallery : System.Web.UI.UserControl
         }
     }
 
-    public bool AllowPagination {
+    public bool AllowPagination
+    {
         set { _AllowPagination = value; }
         get { return _AllowPagination; }
     }
@@ -98,13 +108,27 @@ public partial class uc_Photogallery : System.Web.UI.UserControl
         get { return _pageurl; }
     }
 
-    public TipoOggetto TipoOggetto {
+    public TipoOggetto TipoOggetto
+    {
         get { return _TipoOggetto; }
         set { _TipoOggetto = value; }
     }
 
-    public string TitoloGallery {
+    public string TitoloGallery
+    {
         get { return Galleria.Titolo; }
+    }
+
+    public bool ShowShare
+    {
+        get { return _ShowShare; }
+        set { _ShowShare = value; }
+    }
+
+    public string ShowShareUrl
+    {
+        get { return _ShowShareUrl; }
+        set { _ShowShareUrl = value; }
     }
 
 }

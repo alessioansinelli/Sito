@@ -7,13 +7,15 @@ using System.Web.UI.WebControls;
 
 public partial class _photogallery : System.Web.UI.Page
 {
+
     protected void Page_Load(object sender, EventArgs e)
     {
         TitleTag.Text = Photogallery1.TitoloGallery;
 
         repgallery.DataSource = ElencoPhotogallery;
         repgallery.DataBind();
-    }
+
+    }   
 
     public List<Oggetti.Oggetto> ElencoPhotogallery
     {

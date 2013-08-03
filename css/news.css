@@ -22,7 +22,8 @@ ul.notizie li h2{background: transparent url('/images/stemmi/stella_20.png') no-
 
 ul.fotohome li a img{border:none;}
 
-.newsdate{font-weight:bold;margin:2px 0 2px;}
+.newsdate{font-weight:bold;margin:2px 0 2px; overflow:auto;}
+.share{float:right;}
 .sottotitolo{margin:5px 0 5px;}
 .testo{margin:5px 0 5px; line-height:1.5em;}
 
@@ -36,4 +37,3 @@ ul.gallery li.first{margin:0 10px 15px 0;}
 .leggitutto {text-align:right; margin-top:5px;}
 .leggitutto a{color:#5e121c;}
 
-h1 div.share{position:absolute; right:0; bottom:0;}

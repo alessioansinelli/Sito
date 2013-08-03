@@ -2,7 +2,14 @@
     Inherits="uc_Photogallery" %>
     <% if (TipoOggetto != TipoOggetto.News)
        { %>
-    <h1><% = _TitoloGallery%></h1>
+    <h1><% = _TitoloGallery %></h1>
+    <div class="gallerydate"> 
+    <span>Pubblicata : <% = _DataPubblicazione %></span>
+    <% if (ShowShare == true) { %>
+        <a class="share" href="http://www.facebook.com/sharer.php?u=www.mercenari.it/<% = _ShowShareUrl %>=<% = Request["id"].ToString() %>&amp;t=<% = _TitoloGallery %>" target="blank"><img src="/images/facebook_share.png" alt="condividi su facebook"/></a>
+    <% } %>
+    </div>
+
     <div><% = _SottoTitoloGallery%></div>
     <div><% = _TestoGallery%></div>
     <% }
@@ -12,7 +19,24 @@
      <% } %>
 <asp:Repeater ID="repFoto" runat="server">
     <HeaderTemplate>
-        <ul class="gallery">
+        <div class="gallery Collage">
+    </HeaderTemplate>
+    <ItemTemplate>
+       
+            <div class="Image_Wrapper photodiv" data-caption="<%# DataBinder.Eval(Container.DataItem, "Titolo")%>">
+                <a href="<%# Utility.getPathPhoto((Oggetti.OggettoFoto)(Container.DataItem), "w9") %>" class="photo" title="<%# DataBinder.Eval(Container.DataItem, "Titolo")%>">
+                    <%# Utility.getUrlPhoto((Oggetti.OggettoFoto)(Container.DataItem), "w3") %></a>
+                </div>
+    </ItemTemplate>
+    
+    <FooterTemplate>
+        </div>
+    </FooterTemplate>
+</asp:Repeater>
+
+<%--<asp:Repeater ID="Repeater1" runat="server">
+    <HeaderTemplate>
+        <ul class="gallery Collage">
     </HeaderTemplate>
     <ItemTemplate>
         <li class="<%# Utility.getClassname(Container.ItemIndex, 4, "cb first") %>">
@@ -34,10 +58,8 @@
     <FooterTemplate>
         </ul>
     </FooterTemplate>
-</asp:Repeater>
+</asp:Repeater>--%>
 <div ID="divPaginazione" runat="server" class="pagfoto">
     
 </div>
-<script language="javascript" type="text/javascript">
-    $(function() { $('.photo').lightBox(); }); 
-</script>
+

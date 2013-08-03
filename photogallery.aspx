@@ -10,7 +10,7 @@
 </asp:Content>
 
 <asp:Content ID="head" runat="server" ContentPlaceHolderID="addheadcontent">
-    <title>Associazione Aranceri Mercenari - Le Foto - <asp:Literal runat="server" id="TitleTag"></asp:Literal></title>
+    <title><asp:Literal runat="server" id="TitleTag"></asp:Literal> - Associazione Aranceri Mercenari - Le Foto</title>
     <link rel="stylesheet" type="text/css" href="/css/foto.css" />
 </asp:Content>
 
@@ -20,7 +20,7 @@
         <div class="titolo grid_12"><img src="images/stemmi/stella_30.png" alt="Stella Mercenari" /></div>        
         <div class="j grid_8 left">
         
-            <uc3:Photogallery ID="Photogallery1" runat="server" TipoOggetto="Photogallery" AllowPagination="true" />
+            <uc3:Photogallery ID="Photogallery1" runat="server" TipoOggetto="Photogallery" AllowPagination="true" ShowShare="true" ShowShareUrl="photogallery.aspx?id" />
         
         </div>
         <div class="grid_4 right">
@@ -45,4 +45,14 @@
         </div>        
     </div>
 </form>
+</asp:Content>
+
+<asp:Content ID="scriptBottom" ContentPlaceHolderID="addScript" runat="server">
+    <script language="javascript" type="text/javascript">
+        $(function () { $('.photo').lightBox(); });
+
+        $('.Collage').removeWhitespace().collagePlus({ 'targetHeight': 200 });
+        $('.Collage').show();
+
+    </script>
 </asp:Content>

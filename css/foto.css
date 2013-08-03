@@ -7,6 +7,7 @@ ul.elencogallerie{}
 ul.elencogallerie li{display: block;margin:0 10px 0 0;width: 300px;float:left;height:240px;}
 ul.elencogallerie li a img{border:0;}
 
+.gallery{margin-top: 10px;}
 ul.gallery{margin-top:10px;}
 ul.gallery li{display: block;margin:0 8px;width: 140px;float:left;height: 100px;overflow: hidden;}
 ul.gallery li a img{border:0;}
@@ -17,3 +18,6 @@ ul.fotogallery li h2{font-size:12px;}
 ul.fotogallery li{display: block;margin:0 10px 5px 0;width: 140px;float:left;}
 ul.fotogallery li div.photodiv{height: 100px;overflow: hidden;}
 ul.fotogallery li a img{border:0;}
+
+.gallerydate{font-weight:bold;margin:2px 0 2px; overflow:auto;}
+.share{float:right;}

@@ -6,10 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="/css/layout.css" />
 	<link rel="stylesheet" type="text/css" href="/css/menu.css" />
 	<link rel="stylesheet" type="text/css" href="/css/jquery.lightbox-0.5.css" />
-	<link rel="shortcut icon" href="/favicon.ico" />
-	<script type="text/javascript" src="/js/jquery.js" language="javascript"></script>
-	<script type="text/javascript" src="/js/jquery.form.js"  language="javascript"></script>
-	<script type="text/javascript" src="/js/lightbox/jquery.lightbox-0.5.min.js"  language="javascript"></script>
+    <link rel="stylesheet" type="text/css" href="/css/collagePlus/transitions.css" />
+	<link rel="shortcut icon" href="/favicon.ico" />	
 	<meta name="author" content="Associazione Aranceri Mercenari" />
 	<meta name="keywords" content="Aranceri, Aranceri Mercenari,Gente da Piola, piazza del Rondolino, Rondolino, Mercenari Ivrea, Carnevale Ivrea, Carnevale, Battaglia arance, Tiro arance, arance, Mugnaia, Generale, Pifferi, Tamburi, Abbà, Stato Maggiore, Vivandiere, Arance, Giovedì grasso, Castello Ivrea, Dora, Baltea, Bajo Dora, Fagioli grassi, Vin brulè, festa in maschera, sfilata, Aranceri Arduini, Aranceri Scacchi, Aranceri Picche, Aranceri Morte, Aranceri Tuchini, Aranceri Diavoli, Aranceri Pantera Nera, Aranceri Credendari" />
 	<asp:ContentPlaceHolder ID="addheadcontent" runat="server"></asp:ContentPlaceHolder>
@@ -38,5 +36,13 @@
     </script></a>
     <noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?1377992&101" alt="statistiche sito" border="0"></a></noscript>
     <!-- Histats.com  END  -->
+    <!-- Javascript import -->
+    <script type="text/javascript" src="/js/jquery.js" language="javascript"></script>
+	<script type="text/javascript" src="/js/jquery.form.js"  language="javascript"></script>
+	<script type="text/javascript" src="/js/lightbox/jquery.lightbox-0.5.min.js"  language="javascript"></script>
+    <script type="text/javascript" src="/js/collagePlus/jquery.collagePlus.js"  language="javascript"></script>
+    <script type="text/javascript" src="/js/collagePlus/extras/jquery.collageCaption.js"  language="javascript"></script>
+    <script type="text/javascript" src="/js/collagePlus/extras/jquery.removeWhitespace.js"  language="javascript"></script>
+    <asp:ContentPlaceHolder ID="addScript" runat="server"></asp:ContentPlaceHolder>
 </body>
 </html>
