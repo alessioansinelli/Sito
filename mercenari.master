@@ -25,7 +25,7 @@
 			<asp:ContentPlaceHolder ID="contentright" runat="server"></asp:ContentPlaceHolder>
 		</div>
 		<div id="footer" class="clearfix">
-			<div id="credits">&copy; Associazione Aranceri Mercenari 2011 - Art Davide Aichino - <a href="mailto:info@mercenari.it" class="mail">info@mercenari.it</a></div>
+			<div id="credits">&copy; Associazione Aranceri Mercenari 2014 - Art Davide Aichino - <a href="mailto:info@mercenari.it" class="mail">info@mercenari.it</a></div>
 		</div>
 	</div>
 	<!-- Histats.com  START  (standard)-->

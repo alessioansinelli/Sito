@@ -20,12 +20,13 @@
             <img src="images/stemmi/stella_30.png" alt="Stella Mercenari" /></div>
         <div class="j grid_8 left">
             <p>
-                Le iscrizioni per il Carnevale 2013 sono aperte da <strong>Martedì 8 gennaio</strong>
-                a <strong>domenica 03 Febbraio</strong>, e si svolgono solo ed esclusivamente durante
+                Le iscrizioni per il Carnevale 2014 sono aperte da <strong>Venerdì 10 gennaio</strong>
+                a <strong>domenica 23 Febbraio</strong>, e si svolgono solo ed esclusivamente durante
                 le riunioni presso la <a href="/sede.aspx" title="Sede dei Mercenari">sede</a>.
-                Unica eccezione per domenica 03 Febbraio, quando saremo al consueto mercatino degli
-                aranceri di piazza Ottinetti. Per vivere al meglio e con la massima partecipazione
-                il carnevale mercenario, ti consigliamo di non attendere gli ultimi giorni per venire
+                Unica eccezione per domenica 23 Febbraio, quando saremo al consueto mercatino degli
+                aranceri di piazza Ottinetti. 
+                Per vivere al meglio e con la massima partecipazione
+                il Carnevale Mercenario, ti consigliamo di non attendere gli ultimi giorni per venire
                 ad iscriverti rischiando di fare lunghe code. Chiunque abbia voglia di partecipare
                 alla preparazione delle iniziative in previsione per il Carnevale, è ben accetto
                 - alle riunioni c'è la possibilità di incontrare i responsabili e condividere con
@@ -33,23 +34,25 @@
             </p>
             <br />
             <h2>
-                Calendario iscrizioni 2013</h2>
+                Calendario iscrizioni 2014</h2>
             <ul class="calendario">
-                <li><strong>Martedì 08 gennaio 2013</strong>. Dalle ore 21.00 alle ore 24.00</li>
-                <li><strong>Venerdì 11 gennaio 2013</strong>. Dalle ore 21.00 alle ore 24.00</li>
-                <li><strong>Martedì 15 gennaio 2013</strong>. Dalle ore 21.00 alle 24.00</li>
-                <li><strong>Venerdì 18 gennaio 2013</strong>. Dalle ore 21.00 alle 24.00</li>
-                <li><strong>Martedì 22 gennaio 2013</strong>. Dalle ore 21.00 alle 24.00</li>
-                <li><strong>Venerdì 25 gennaio 2013</strong>. Dalle ore 21.00 alle 24.00</li>
-                <li><strong>Martedì 29 gennaio 2013</strong>. Dalle ore 21.00 alle 24.00</li>
-                <li><strong>Venerdì 01 febbraio 2013</strong>. Dalle ore 21.00 alle 24.00</li>
-                <li><strong>Domenica 03 febbraio 2013</strong>, in piazza Ottinetti. Dalle ore 10.00
-                    alle ore 16.30</li>
+                <li><strong>Venerdì 10 gennaio</strong>. Dalle ore 21.00 alle ore 24.00</li>
+                <li><strong>Venerdì 17 gennaio 2014</strong>. Dalle ore 21.00 alle ore 24.00</li>
+                <li><strong>Venerdì 24 gennaio 2014</strong>. Dalle ore 21.00 alle ore 24.00</li>
+                <li><strong>Venerdì 31 gennaio 2014</strong>. Dalle ore 21.00 alle 24.00</li>
+                <li><strong>Martedì 04 febbraio 2014</strong>. Dalle ore 21.00 alle 24.00</li>
+                <li><strong>Venerdì 07 febbraio 2014</strong>. Dalle ore 21.00 alle 24.00</li>
+                <li><strong>Martedì 11 febbraio 2014</strong>. Dalle ore 21.00 alle 24.00</li>
+                <li><strong>Venerdì 14 febbraio 2014</strong>. Dalle ore 21.00 alle 24.00</li>
+                <li><strong>Martedì 18 febbraio 2014</strong>. Dalle ore 21.00 alle 24.00</li>
+                <li><strong>Venerdì 21 febbraio 2014</strong>. Dalle ore 21.00 alle 24.00</li>
+                <li><strong>Domenica 23 febbraio 2014</strong>, in piazza Ottinetti. Dalle ore 10.00
+                    alle ore 17.00</li>
             </ul>
         </div>
         <div class="j grid_4">
             <h1>
-                Quote Iscrizione 2013</h1>
+                Quote Iscrizione 2014</h1>
             <ul class="quote">
                 <li><strong>Socio</strong>. 30,00 €</li>
                 <li><strong>Socio Arancere</strong>: 90,00 €</li>

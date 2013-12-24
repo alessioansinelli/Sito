@@ -64,7 +64,7 @@
                     </a>
                     <h3 class="c">Diavoli Aranceri</h3></li>
                 <li>
-                    <a href="http://www.credendari.org" title="Associazione Credendari Aranceri" target="_blank">
+                    <a href="http://www.credendariaranceri.it" title="Associazione Credendari Aranceri" target="_blank">
                         <img src="images/link/credendari.png" alt="Associazione Credendari Aranceri" />
                     </a>
                     <h3 class="c">Credendari Aranceri</h3>
