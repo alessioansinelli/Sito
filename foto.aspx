@@ -33,9 +33,8 @@
                         <a href="photogallery.aspx?id=<%# DataBinder.Eval(Container.DataItem, "ID")%>">
                             <%# Utility.getUrlPhoto(((Oggetti.Oggetto)Container.DataItem).Foto, "w4") %>
                         </a>
-                    </div>
-                        
-                    <div class="newsappuntamenti"><%# DataBinder.Eval(Container.DataItem, "SottoTitolo")%></div>
+                        <div class="newsappuntamenti"><%# DataBinder.Eval(Container.DataItem, "SottoTitolo")%>Testo Overlay Di prova - Da rimuovere</div>
+                    </div>                                           
                 </li>
             </ItemTemplate>
             <AlternatingItemTemplate>
@@ -46,8 +45,8 @@
                         <a href="photogallery.aspx?id=<%# DataBinder.Eval(Container.DataItem, "ID")%>">
                             <%# Utility.getUrlPhoto(((Oggetti.Oggetto)Container.DataItem).Foto, "w4") %>
                         </a>
+                        <div class="newsappuntamenti"><%# DataBinder.Eval(Container.DataItem, "SottoTitolo")%></div>
                     </div>
-                    <div class="newsappuntamenti"><%# DataBinder.Eval(Container.DataItem, "SottoTitolo")%></div>
                 </li>  
             </AlternatingItemTemplate>
             <FooterTemplate>
